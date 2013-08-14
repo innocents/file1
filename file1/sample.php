@@ -13,7 +13,6 @@
   $query2 = "SELECT bbb " . " FROM tbl01" ;
   $result1 = mysqli_query( $db, $query1 )
     or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
-  $result2 = mysqli_query( $query2 );
     
 
 ?>
