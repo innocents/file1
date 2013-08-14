@@ -11,7 +11,9 @@
     or die("データベース" . $dbName . "との接続に失敗しました。");
   $query1 = "SELECT aaa " . " FROM tbl01" ;
   $query2 = "SELECT bbb " . " FROM tbl01" ;
-  $result = mysqli_query( $db, $query1 )
+  $result1 = mysqli_query( $db, $query1 )
+    or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
+  $result2 = mysqli_query( $db, $query2 )
     or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
 
 ?>
@@ -31,12 +33,13 @@
         </TR>
         <?php
          $data_cnt = 0;
-             while ( $row = mysqli_fetch_array( $result ) ){
+             while ( $row1 = mysqli_fetch_array( $result1 ) , 		
+		     $row2 = mysqli_fetch_array( $result2 ) ){
                $data_cnt = $data_cnt + 1;
                print "<TR>";
                print "<TD width=\"20\">$data_cnt</TD>";
-               print "<TD width=\"160\">$row[0]</TD>";
-	       print "<TD width=\"160\">$row[1]</TD>";
+               print "<TD width=\"160\">$row1[0]</TD>";
+	       print "<TD width=\"160\">$row2[0]</TD>";
 		$data_cnt1 = $data_cnt +100;
                print "<TD width=\"180\">$data_cnt1</TD>";
                print "</TR>";
