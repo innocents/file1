@@ -27,7 +27,7 @@
           <TD width="25">No</TD>
 	  <TD width="160"><center>コード</center></TD>	
           <TD width="160"><center>名称</center></TD>
-          <TD width="180">番号</TD>
+          <TD width="180"><center>番号</center></TD>
         </TR>
         <?php
          $data_cnt = 0;
