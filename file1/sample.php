@@ -9,9 +9,8 @@
   mysqli_query($db,"SET NAMES sjis");
   mysqli_select_db( $db, $dbName )
     or die("データベース" . $dbName . "との接続に失敗しました。");
-  $query1 = "SELECT aaa " . " FROM tbl01" ;
-  $query2 = "SELECT bbb " . " FROM tbl01" ;
-  $result = mysqli_query( $db, $query1 )
+  $query = "SELECT aaa , bbb" . " FROM tbl01" ;
+  $result = mysqli_query( $query )
     or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
     
 
@@ -37,7 +36,7 @@
                print "<TR>";
                print "<TD width=\"20\">$data_cnt</TD>";
                print "<TD width=\"160\">$row[0]</TD>";
-	       print "<TD width=\"160\">$row[0]</TD>";
+	       print "<TD width=\"160\">$row[1]</TD>";
 		$data_cnt1 = $data_cnt +100;
                print "<TD width=\"180\">$data_cnt1</TD>";
                print "</TR>";
