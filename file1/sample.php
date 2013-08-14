@@ -37,6 +37,7 @@
                print "<TD width=\"20\">$data_cnt</TD>";
                print "<TD width=\"160\">$row[0]</TD>";
 	       print "<TD width=\"160\">$row[1]</TD>";
+	       print "<TD width=\"160\">$row[2]</TD>";
 		$data_cnt1 = $data_cnt +100;
                print "<TD width=\"180\">$data_cnt1</TD>";
                print "</TR>";
