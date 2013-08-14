@@ -19,7 +19,7 @@
 <head>
 <title>PHP+MySQLの接続確認</title>
 </head>
-<body>
+<body><center>
 <font size= "2">MySQLデータの取得と表示</font>
   <TABLE border="1" cellspacing=0 cellpadding=2 width="200">
     <TBODY>
@@ -44,5 +44,5 @@
          ?>
     </TBODY>
   </TABLE>
-</body>
+</center></body>
 </html>
