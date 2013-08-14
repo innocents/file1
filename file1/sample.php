@@ -20,7 +20,7 @@
 <title>PHP+MySQLの接続確認</title>
 </head>
 <body><center>
-<font size= "20">テストページ</font>
+<font size= "15">テストページ</font>
   <TABLE border="1" cellspacing=0 cellpadding=2 width="200">
     <TBODY>
         <TR bgcolor="#66666">
