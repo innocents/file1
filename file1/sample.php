@@ -10,7 +10,7 @@
   mysqli_select_db( $db, $dbName )
     or die("データベース" . $dbName . "との接続に失敗しました。");
   $query = "SELECT aaa " . " FROM tbl01" ;
-  $result = mysqli_query( $query )
+  $result = mysqli_query( $db , $query )
     or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
     
 
