@@ -9,7 +9,7 @@
   mysqli_query($db,"SET NAMES sjis");
   mysqli_select_db( $db, $dbName )
     or die("データベース" . $dbName . "との接続に失敗しました。");
-  $query = "SELECT bbb " .
+  $query = "SELECT * " .
                " FROM tbl01";
   $result = mysqli_query( $db, $query )
     or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
@@ -25,6 +25,7 @@
     <TBODY>
         <TR bgcolor="#cccccc">
           <TD width="25">No</TD>
+	  <TD width="160"><center>コード</center></TD>	
           <TD width="160"><center>名称</center></TD>
           <TD width="180">番号</TD>
         </TR>
