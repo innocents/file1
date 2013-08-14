@@ -20,10 +20,10 @@
 <title>PHP+MySQLの接続確認</title>
 </head>
 <body><center>
-<font size= "2">MySQLデータの取得と表示</font>
+<font size= "20">テストページ</font>
   <TABLE border="1" cellspacing=0 cellpadding=2 width="200">
     <TBODY>
-        <TR bgcolor="#cccccc">
+        <TR bgcolor="#66666">
           <TD width="25">No</TD>
 	  <TD width="160"><center>コード</center></TD>	
           <TD width="160"><center>名称</center></TD>
