@@ -9,8 +9,9 @@
   mysqli_query($db,"SET NAMES sjis");
   mysqli_select_db( $db, $dbName )
     or die("データベース" . $dbName . "との接続に失敗しました。");
-  $query = "SELECT aaa " . " FROM tbl01" ;
-  $result = mysqli_query( $db, $query )
+  $query1 = "SELECT aaa " . " FROM tbl01" ;
+  $query2 = "SELECT bbb " . " FROM tbl01" ;
+  $result = mysqli_query( $db, $query1 , $query2)
     or die("データの読み込みに失敗しました:\n " . mysqli_error( $db ) );
 
 ?>
